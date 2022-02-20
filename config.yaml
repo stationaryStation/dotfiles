@@ -35,6 +35,9 @@ dotfiles:
   d_dmenu:
     src: dmenu
     dst: ~/dmenu
+  d_dotfiles_dmenu:
+    src: dotfiles/dmenu
+    dst: ~/dotfiles/dmenu
 profiles:
   devenv:
     dotfiles:
@@ -50,3 +53,4 @@ profiles:
     - d_i3
     - d_rofi
     - d_dmenu
+    - d_dotfiles_dmenu
