@@ -24,7 +24,7 @@ font pango:FiraCode Nerd Font 10
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -35,15 +35,49 @@ exec --no-startup-id nitrogen --restore
 # Launch Bars
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Theme
 client.focused          #F5C2E7 #DDB6F2 #1E1E2E #2e9ef4 #C9CBFF
 client.unfocused        #1A1826 #1E1E2E #6E6C7E #292d2e #222222
 client.focused_inactive #333333 #FAE3B0 #1E1E2E #484e50 #5f676a
 # Use Compositor
 exec_always --no-startup-id picom -b --config ~/.config/i3/picom.conf
 
+# Run Dunst config
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
+
 # Run MPD
 exec --no-startup-id mpd &
+
+# Assign Waterfox and Firefox Workspace 1
+
+assign [class="waterfox"] -> 1
+assign [class="firefox"] -> 1
+
+# The same thing but with atom and terminals
+
+assign [class="kitty"] -> 2
+assign [class="atom"] -> 2
+
+# Send Ncmpcpp to scratchpad
+
+for_window [class="ncmpcpp"] move scratchpad
+
+# Assign steam and Discord to their respective Workspaces
+
+assign [class="steam"] -> 4
+assign [class="discord"] -> 6
+
+# Scratchpad related Commands
+
+bindsym $mod+Shift+minus move Scratchpad
+bindsym $mod+minus scratchpad show
+
+# Run Gitlab Runner for CD/CI jobs (Yes, i use my laptop as a CD/CI pipeline)
+
+exec --no-startup-id gitlab-runner run
+
 # Use pactl to adjust volume in PulseAudio.
+
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -51,22 +85,36 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Increase/Decrease Backlight Brightness
+
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
+# Show Notification History
+
+bindsym $mod+n exec --no-startup-id dunstctl history-pop
+
 # Lock screen
-bindsym $mod+Shift+n exec --no-startup-id i3lock-fancy
+
+bindsym $mod+Shift+n exec --no-startup-id betterlockscreen -l
 
 # Use Mouse+$mod to drag floating windows to their wanted position
+
 floating_modifier $mod
 
-# start a terminal
+# Start Kitty
+
 bindsym $mod+Return exec kitty
 
+# Run NCMPCPP (Music Player)
+
+bindsym $mod+Shift+m exec kitty --class ncmpcpp ncmpcpp
+
 # kill focused window
+
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
+
 bindsym $mod+r exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -79,6 +127,7 @@ bindsym $mod+m exec --no-startup-id ~/.config/rofi/bin/applet_mpd
 
 # Screenshot Keybind
 bindsym Print exec --no-startup-id scrot ~/Screenshots/%Y-%m-%d-%T-screenshot.png
+bindsym $mod+Print exec --no-startup-id ~/.config/rofi/bin/applet_screenshot
 
 # i3-gaps setup
 new_window 1pixel
