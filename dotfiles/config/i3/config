@@ -72,7 +72,11 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Show Notification History
 
-bindsym $mod+n exec --no-startup-id dunstctl history-pop
+bindsym $mod+Shift+backslash exec --no-startup-id dunstctl history-pop
+
+# Show network menu
+
+bindsym $mod+n exec networkmanager_dmenu
 
 # Lock screen
 
@@ -93,6 +97,10 @@ bindsym $mod+Shift+m exec kitty --class ncmpcpp ncmpcpp
 # kill focused window
 
 bindsym $mod+q kill
+
+# Make Polybar always floating no matter what you do
+
+for_window [class="polybar"] floating enable
 
 # start dmenu (a program launcher)
 
