@@ -1,0 +1,50 @@
+sw_volume: 50
+audio_device_state:1:MPD
+audio_device_state:1:Visualizer feed
+state: play
+current: 29
+time: 124.987000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Trackmania² Stadium/Trackmania 2 Stadium Soundtrack - Dashboard-8RI57QqycqA.mp3
+1:Trackmania² Stadium/Trackmania 2 Stadium Soundtrack - Menu-24bNhjl2RdE.mp3
+2:Trackmania² Stadium/Trackmania 2 Stadium Soundtrack - Hydroplane-C3VRPVUjb1A.mp3
+3:Trackmania² Stadium/Trackmania 2 Stadium Soundtrack - Tail Lights-51QXYjxQ2o0.mp3
+4:Beat Saber OST 4/Camellia - Spin Eternally (from Beat Saber OST4).mp3
+5:Blackmagik Blazing/Camellia - Nasty + Nasty + Spell (from Blackmagik Blazing).mp3
+6:Blackmagik Blazing/We Could Get More Machinegun Psystyle! -And More Genre Switches.mp3
+7:BSWC2021/Camellia - Toxic Violet Cubes [From BSWC2021 Grand Finals].mp3
+8:Camellia Remixes/THE WORLD REVOLVING (Camellia Remix) [From Deltarune Ch.01].mp3
+9:Camellia Remixes/かめりあ (Camellia) - Exit This Earth's Atomosphere (Camellia's 'Planetary--200step' Remix).mp3
+10:Camellia Remixes/Camellia_Qyoh(Nine_Stars)_forThanks90kTwitterFollowers_Maximized.mp3
+11:Camellia Remixes/Camellia - GHOST (2020 Halloween+++++++++ VIP).mp3
+12:Camellia Remixes/Camellia - PURE SILVER.mp3
+13:Camellia Remixes/Camellia - Burning Aquamarine [TF 200k subs on YT].mp3
+14:Camellia Remixes/Camellia_-_Nacreous_Snowmelt_for_THX_70k_Twitter_Followers.mp3
+15:Crystallized/Camellia - Light it up (from crystallized).mp3
+16:Crystallized/Camellia - NUCLEAR-STAR (from crystallized).mp3
+17:EGTS2021/Camellia - TremENDouS [From EGTS 2021 Grand Finals Tiebreaker].mp3
+18:INVAIDAS FROM DA JUNGLE/POWA OF DA WILDANES-Ldh1fSo1lGU.mp3
+19:Irrelevant/Irrelevant.mp3
+20:OWC2020/Camellia - ____PARTS (From OWC2020 Standard Grand Final Tiebreaker).mp3
+21:PLANET\\SHAPER/Camellia - Exit This Earth's Atomosphere (from PLANET_SHAPER).mp3
+22:Terra I\O/Body F10ating in the Zero Gravity Space.mp3
+23:Terra I\O/Dance with Silence.mp3
+24:Terra I\O/05 Fly Wit Me.mp3
+25:Terra I\O/09 Flamewall.mp3
+26:Terra I\O/10 BAD ACCESS (FROM A MOE MAID).mp3
+27:U.U.F.O/GHOST VS. GHOUL MASHUP.mp3
+28:U.U.F.O/[U.U.F.O.] Tr.02 (The) Red + Room.mp3
+29:U.U.F.O/[U.U.F.O.] Tr.14 AREA 52.mp3
+30:U.U.F.O/[U.U.F.O.] Tr.17 CICADA3302.mp3
+31:U.U.F.O/[U.U.F.O.] Tr.23 GHOUL.mp3
+32:U.U.F.O/[U.U.F.O.] Tr.24 Myths You Forgot (feat. Toby Fox).mp3
+33:U.U.F.O/[U.U.F.O.] Tr.26 Bonus Track 4 - #1f1e33 (#00102g version) [From Arcaea].mp3
+34:WACCA/Camellia - THE MUZZLE FACING (from WACCA).mp3
+playlist_end
