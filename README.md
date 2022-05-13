@@ -1,10 +1,10 @@
 # Dotfiles (feat. catppuccin + dmenumoji)
 
 ## Dependencies:
-  - Polybar
+  - polybar
   - Bspwm
-  - SXHKD
-  - DMENU (dmenumoji path)
+  - sxhkd
+  - dmenu (dmenumoji path)
   - picom (picom-jonaburg-git)
   - mpd
   - ncmpcpp
@@ -27,9 +27,32 @@ Instalation instructions available in the respective repositories
     - Copy the sample config from the ncmpcpp folder to ~/.config/ncmpcpp and It should work out of the box
  - sxhkd:
     - Copy the config from the sxhkd folder to ~/.config/sxhkd and replace all instances of "stationuwu" to your current username
+ - Wallpapers:
+    - Add some wallpapers to ~/Pictures/Wallpapers/ and It should work out of the box, by default, feh will choose a random wallpaper and apply it every bspwm restart.
+
+---
+
+## Further Configuration
+
+### dmenu
+
+To change dmenu's look, go to ~/.config/sxhkd/sxhkdrc and and change the configuration to your liking. Also another location is ~/bin/\_dm_helper.sh and dm_shutdown.
+
+### feh
+
+To change feh's behavior, go to ~/.config/bspwm/bspwmrc and change the following line to your liking
+
+```bash
+# Default
+feh --randomize --bg-scale ~/Pictures/Wallpapers/
+
+# Display 1 Wallpaper
+feh --bg-scale ~/Pictures/Wallpapers/file_name.png
+
+```
 
 ---
 
 ## Final look
-
+![Photo](https://i.imgur.com/cWYbjSU.png)
 
