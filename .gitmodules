@@ -1,7 +1,0 @@
-[submodule "dotdrop"]
-	path = dotdrop
-  url = https://github.com/deadc0de6/dotdrop.git
-
-[submodule "dmenu"]
-	path = dmenu
-	url = https://github.com/stationaryStation/dmenu
