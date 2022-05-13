@@ -10,6 +10,7 @@
   - ncmpcpp
   - dm-dmenu (Binaries from bin folder should be in ~/bin/)
   - feh
+  - dex (Autostart stuff)
 
 ---
 
