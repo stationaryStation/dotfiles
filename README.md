@@ -12,6 +12,11 @@
   - feh
   - dex (Autostart stuff)
 
+## Optional:
+   - dunst (Notifications)
+   - kitty (Default Terminal Emulator)
+   - betterlockscreen (Default Lockscreen)
+
 ---
 
 ## Installation: 
@@ -23,7 +28,7 @@ Instalation instructions available in the respective repositories
  - dm-dmenu:
     - Move Binaries from bin folder to ~/bin/ and add the directory to path
  - mpd:
-    - Copy the sample config from the mpd folder to ~/.mpd and replace {username_here} with your current username (ej: /home/stationuwu/.mpd/...)
+    - Copy the sample config from the mpd folder to ~/.mpd (No further configuration needed)
  - ncmpcpp:
     - Copy the sample config from the ncmpcpp folder to ~/.config/ncmpcpp and It should work out of the box
  - sxhkd:
@@ -33,11 +38,13 @@ Instalation instructions available in the respective repositories
 
 ---
 
-## Further Configuration
+## Further Customization
 
 ### dmenu
 
 To change dmenu's look, go to ~/.config/sxhkd/sxhkdrc and and change the configuration to your liking. Also another location is ~/bin/\_dm_helper.sh and dm_shutdown.
+
+I will try to remove this fragmentation when I find a propper fix to this issue.
 
 ### feh
 
@@ -52,8 +59,63 @@ feh --bg-scale ~/Pictures/Wallpapers/file_name.png
 
 ```
 
+### dex
+
+To disable autostarting applications, remove the following line on bspwmrc:
+
+```bash
+dex --autostart
+```
+
+### betterlockscreen
+
+To change the default lockscreen image run this command on any terminal emulator:
+
+```bash
+# One image
+betterlockscreen -u ~/Path_To_wallpaper/image_name.png
+
+# Random Image from folder
+betterlockscreen -u ~/Path_to_wallpaper/
+```
+
+### polybar
+
+To disable the aur/pacman update indicator remove the following:
+
+```diff
+modules-right = pulseaudio media xkeyboard battery wlan etch date
+
+- updates
+```
+
+To disable the Wireless Indicator remove the following:
+
+```diff
+modules-right = pulseaudio media xkeyboard battery eth date
+
+- wlan
+```
+
+To disable the battery indicator remove the following:
+
+```diff
+modules-right = pulseaudio media xkeyboard eth date
+
+- battery
+```
+
 ---
 
 ## Final look
+
 ![Photo](https://i.imgur.com/cWYbjSU.png)
 
+Wallpaper from [catppuccin/wallpapers](https://github.com/catppuccin/wallpapers)
+
+## To-do
+
+ - [x] Add Customization options
+ - [x] Add optional dependencies
+ - [ ] Add keybind helper (Similar to what awesomewm has)
+ - [x] Add mpd config
