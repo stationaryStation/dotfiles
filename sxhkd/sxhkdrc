@@ -157,3 +157,10 @@ super + alt + shift + {Left,Down,Up,Right}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# Keybind Display
+#
+
+super + shift + h
+	kitty less ~/.config/bspwm/keybinds

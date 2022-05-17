@@ -40,6 +40,18 @@ Instalation instructions available in the respective repositories
 
 ---
 
+## Help
+
+> Where can I see the default keybinds?
+
+You can see the default keybinds by pressing super+shift+h (Remember, super=windows key)
+
+> How do I change this behavior?
+
+To change the default behavior for the keybind helper, you can change shxkdrc on .config/shxkd/
+
+---
+
 ## Further Customization
 
 ### dmenu
@@ -115,9 +127,11 @@ modules-right = pulseaudio media xkeyboard eth date
 
 Wallpaper from [catppuccin/wallpapers](https://github.com/catppuccin/wallpapers)
 
+---
+
 ## To-do
 
  - [x] Add Customization options
  - [x] Add optional dependencies
- - [ ] Add keybind helper (Similar to what awesomewm has)
+ - [x] Add keybind helper (Similar to what awesomewm has)
  - [x] Add mpd config

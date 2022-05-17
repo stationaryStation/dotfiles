@@ -1,0 +1,94 @@
+  
+
+
+      ____ _____ ____ _       ____  ___   __ __           __    _           __    
+     / __ ) ___// __ \ |     / /  |/  /  / //_/__  __  __/ /_  (_)___  ____/ /____
+    / __  \__ \/ /_/ / | /| / / /|_/ /  / ,< / _ \/ / / / __ \/ / __ \/ __  / ___/
+   / /_/ /__/ / ____/| |/ |/ / /  / /  / /| /  __/ /_/ / /_/ / / / / / /_/ (__  ) 
+  /_____/____/_/     |__/|__/_/  /_/  /_/ |_\___/\__, /_.___/_/_/ /_/\__,_/____/  
+                                              /____/                            
+  By: StationaryStation
+
+-----------------------------------------------------------------------------------------
+
+###################
+
+Applications
+
+###################
+
+-> Open terminal (kitty)
+Super + Return
+
+-> App launcher (dmenu)
+Super + d
+
+-> Run programs (dmenu)
+Super + r
+
+-> Power Menu
+Super + Shift + l
+
+-> Reload Sxhkd (you need to do this after you modify sxhkdrc)
+Super + Escape
+
+-> Screen shot full monitor and save in Pictures folder
+Print
+
+-> Screenshot focused app
+Shift + Print
+
+-> Screenshot Area
+Control + Print
+
+
+###################
+
+Bspwm Keyboard Shortcuts
+
+###################
+
+-> Restart Bspwm
+Super + Alt + r
+
+-> Quit Bspwm
+Super + Alt + q
+
+-> Close focused window
+Super + Shift + q
+
+-> Switch between tiled and monocle layout
+Super + m
+
+-> Swap current and largest window
+Super + g
+
+-> Change focus {west, south, north, east}
+Super + {Left, Down, Up, Right}
+
+-> Switch to different desktop
+Super + <number>
+
+-> Send current node to different desktop
+Super + Shift + <number>
+
+-> Expand a window {left, bottom, top, right}
+Super + Alt + {Left, Down, Up, Right}
+
+-> Contract a window {left, bottom, top, right}
+Super + Alt + Shift + {Left, Down, Up, Right}
+
+-> Move a floating Window
+Super + Mouse1 (Left Click)
+
+-> Focus the last node
+Super + grave
+
+-> Focus the last desktop
+Super + Tab
+
+-> Focus older node in focus history
+Super + o
+
+-> Focus newer node in focus history
+Super + i
