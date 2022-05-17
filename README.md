@@ -30,6 +30,8 @@ Instalation instructions available in the respective repositories
     - Copy the config from the sxhkd folder to ~/.config/sxhkd and replace all instances of "stationuwu" to your current username
  - Wallpapers:
     - Add some wallpapers to ~/Pictures/Wallpapers/ and It should work out of the box, by default, feh will choose a random wallpaper and apply it every bspwm restart.
+ - picom:
+   - Move the picom.conf file to `.config/` or `.config/picom`
 
 ---
 
