@@ -25,6 +25,9 @@ bspc config urgent_border_color "#F28FAD"
 bspc config focused_sticky_border_color "#ABE9B3"
 bspc config active_sticky_border_color "#ABE9B3"
 
+# Focus Rules
+bspc config focus_follows_pointer true
+
 # Window Rules
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
@@ -34,9 +37,17 @@ bspc rule -a Screenkey manage=off
 
 # Applications
 lxqt-policykit-agent &
-dex --autostart&
+dex -a -e bspwm &
 picom --experimental-backends &
-feh --randomize --bg-scale /home/stationuwu/Pictures/Wallpapers
-nm-applet
+feh --randomize --bg-scale /home/stationuwu/Pictures/Wallpapers/
+nm-applet &
 dunst -conf ~/.config/dunst/dunstrc &
+
+# Optional: Optimus Manager QT Tray Icon at bspwm startup
+optimus-manager-qt &
+
+# REQUIRED: Policy Kit Agent (Also known as polkit agent)
+lxqt-policykit-agent &
+
+# Launch Polybar
 /home/stationuwu/.config/bspwm/launch_bars.sh
